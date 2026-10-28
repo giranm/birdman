@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Birdman",
+      "hasCanvas": true,
+      "bodyTextLen": 651,
+      "bodyTextHash": "38f9c6cdba76fca40d0f8ed9e5171f05f0783a79866905c6632463819f24f314",
+      "bodyTextPrefix": "Bognor Regis Pier Birdman From 1971 to 2016, homemade flyers ran",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Birdman",
+      "hasCanvas": true,
+      "bodyTextLen": 341,
+      "bodyTextHash": "7ff9cca5c7441ca585b962daa01cc7e393279d6f3a20c26ec7fd4fe03d165c24",
+      "bodyTextPrefix": "BOGNOR REGIS 0 m best 0 m Choose a flyer Condor Helmet and goggl",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

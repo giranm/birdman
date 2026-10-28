@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Silkscreen", ui-monospace, monospace;
+  --font-display: "Silkscreen", ui-monospace, monospace;
+  --color-ink: #1c2836;
+  --color-cream: #f4efe4;
+  --color-sea: #1f6f8b;
+  --color-buoy: #e85d4c;
+  --color-sand: #e2b340;
+  --radius-card: 0.75rem;
+}
+
+@layer base {
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+    background: var(--color-ink);
+    color: var(--color-cream);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Portrait playfield. On large screens the poster takes 20rem beside it. */
+.shell {
+  --aside: 0px;
+}
+
+@media (min-width: 1024px) {
+  .shell {
+    --aside: 20rem;
+  }
+}
+
+.stage {
+  width: min(calc(100vw - var(--aside)), calc(100dvh * 9 / 16));
+  height: min(100dvh, calc((100vw - var(--aside)) * 16 / 9));
+  touch-action: none;
+  user-select: none;
+}
+
+.text-sand-deep {
+  color: color-mix(in srgb, var(--color-sand) 62%, var(--color-ink));
+}
+
+.boot-bar {
+  transform-origin: left center;
+  animation: boot-fill 3s linear forwards;
+}
+
+@keyframes boot-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
